@@ -4,5 +4,5 @@
     "docker-in-docker": "latest"
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "docker run -d -p 8080:8080 rockncoder/hello_crow"
+  "postCreateCommand": "docker run -d -p 8080:8080 -e PORT=8080 rockncoder/hello_crow"
 }
