@@ -1,0 +1,8 @@
+{
+  "name": "Docker Codespace",
+  "features": {
+    "docker-in-docker": "latest"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "docker run -d -p 8080:8080 rockncoder/hello_crow"
+}
